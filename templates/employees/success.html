@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Success Message - CompanyApp
+{% endblock title %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+<div class="container my-4">
+    <div class="alert alert-success" role="alert">
+        <h2 class="fw-bold">Congratulations, the employee has been successfully registered!</h2>
+        <a href="/" class="btn btn-warning mt-3">Back to top</a>
+    </div>
+</div>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}

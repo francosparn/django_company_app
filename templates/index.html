@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    CompanyApp - Home
+{% endblock title %}
+
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+<div class="frontpage">
+    <img src="{% static 'img/portada.jpg' %}" class="img-fluid" alt="">
+</div>
+
+<div class="container my-4 text-center home">
+    <h1>Welcome to <strong>company</strong>!</h1>
+    <hr class="line my-3">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <a href="#"><img src="{% static 'img/employees.png' %}" alt=""></a>
+            <h3 class="fw-bold mt-2">Employees</h3>
+            <p>Our organization has more than <strong>20 highly trained employees</strong> to meet the needs of our customers.</p>
+        </div>
+        <div class="col-md-4">
+            <a href="#"><img src="{% static 'img/departments.png' %}" alt=""></a>
+            <h3 class="fw-bold mt-2">Departments</h3>
+            <p>We have <strong>8 departments</strong> and each of them is run by our best employees.</p>
+        </div>
+        <div class="col-md-4">
+            <a href="#"><img src="{% static 'img/customers.png' %}" alt=""></a>
+            <h3 class="fw-bold mt-2">Customers</h3>
+            <p>We currently have more than <strong>500 active clients</strong> who trust and give us their full support every day.</p>
+        </div>
+    </div>
+</div>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Edit Employee - CompanyApp
+{% endblock title %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'includes/header.html' %}
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center fw-bold">Edit User Information</h1>
+
+            <form method="POST" enctype="multipart/form-data">{% csrf_token %}
+                {{ form.as_p }}
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-success btn-block">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}

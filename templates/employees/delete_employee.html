@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Delete Employee - CompanyApp
+{% endblock title %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'includes/header.html'%}
+
+<div class="container my-4">
+    <div class="alert alert-danger" role="alert">
+        <h2>Are you sure you want to delete the employee <strong>{{ employee.first_name }} {{ employee.last_name }}</strong>?</h2>
+
+        <form method="POST" class="mt-4">{% csrf_token %}
+            <button type="submit" class="btn btn-danger">Yes, delete it</button>
+            <a class="btn btn-secondary" href="{% url 'employee_app:employees_admin' %}">Cancel</a>
+        </form>
+    </div>
+</div>
+
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}

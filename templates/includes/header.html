@@ -1,0 +1,17 @@
+<header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand title" href="/"><i class="fa-solid fa-hurricane"></i> company</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav category">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="{% url 'employee_app:all_employees' %}">Employees</a>
+              <a class="nav-link" href="{% url 'department_app:all_departments' %}">Departaments</a>
+              <a class="nav-link" href="{% url 'employee_app:employees_admin' %}"><span class="badge bg-dark"><i class="fa-solid fa-user"></i> Administration Panel</span></a>
+          </div>
+        </div>
+    </nav>
+</header>
