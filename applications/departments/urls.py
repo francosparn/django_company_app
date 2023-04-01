@@ -7,11 +7,6 @@ app_name = 'department_app'
 
 urlpatterns = [
     path(
-        '', 
-        views.Index.as_view(), 
-        name="index"
-    ),
-    path(
         'departments-list/', 
         views.ListAllDepartments.as_view(), 
         name="all_departments"

@@ -7,11 +7,6 @@ app_name = 'employee_app'
 
 urlpatterns = [
     path(
-        '', 
-        views.Index.as_view(), 
-        name="index"
-    ),
-    path(
         'employees-list/', 
         views.ListAllEmployees.as_view(), 
         name="all_employees"
