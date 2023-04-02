@@ -74,9 +74,9 @@ WSGI_APPLICATION = 'company.wsgi.application'
 """DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_app_company',
-        'USER': 'app_company',
-        'PASSWORD': 'admin123',
+        'NAME': 'name',
+        'USER': 'user',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'company.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://app_company:admin123@localhost:5432/db_app_company',
+        default='postgres://user:password@localhost:5432/name',
         conn_max_age=600
     )
 }
