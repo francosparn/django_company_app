@@ -16,3 +16,34 @@ CRUD type web application developed in the **Django** framework.
 Icons used are from **[Font Awesome](https://fontawesome.com/)**.
 
 ## Preview
+
+### Home
+![](https://i.imgur.com/WE3wZrE.png)
+
+### Employees List
+
+![](https://i.imgur.com/o40tS1o.png)
+
+### Employee Details
+
+![](https://i.imgur.com/c2K6kof.png)
+
+### Departments List
+
+![](https://i.imgur.com/d7q66NQ.png)
+
+### Employees by Departments
+
+![](https://i.imgur.com/HYjfnFY.png)
+
+### Administration Panel
+
+![](https://i.imgur.com/R6XQbjs.png)
+
+### Create Employee
+
+![](https://i.imgur.com/LkUE1oB.png)
+
+### Create Department
+
+![](https://i.imgur.com/wm2CXYm.png)
