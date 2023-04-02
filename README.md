@@ -1,4 +1,4 @@
-# django-company-app
+# Company Application
 
 CRUD type web application developed in the **Django** framework.
 
